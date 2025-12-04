@@ -8,9 +8,11 @@ phases:
 
   build:
     commands:
+      - cd frontend
       - npm run build
 
 artifacts:
   base-directory: frontend/build
   files:
     - '**/*'
+version: 0.2
