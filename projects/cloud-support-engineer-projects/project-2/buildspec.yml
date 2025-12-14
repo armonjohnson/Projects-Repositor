@@ -8,11 +8,10 @@ phases:
 
   build:
     commands:
-      - cd frontend
       - npm run build
+      - cd ..
 
 artifacts:
-  base-directory: frontend/build
+  base-directory: projects/cloud-support-engineer-projects/project-2
   files:
     - '**/*'
-version: 0.2
