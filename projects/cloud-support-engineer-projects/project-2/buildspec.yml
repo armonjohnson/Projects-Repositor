@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - cd frontend
+      - cd projects/cloud-support-engineer-projects/project-2/frontend
       - npm install
 
   build:
@@ -14,4 +14,6 @@ phases:
 artifacts:
   base-directory: projects/cloud-support-engineer-projects/project-2
   files:
-    - '**/*'
+    - appspec.yml
+    - scripts/**/*
+    - frontend/build/**/*
