@@ -1,18 +1,19 @@
 #!/bin/bash
 set -e
 
-echo "AfterInstall started"
+# folder where this script lives: .../project-2/scripts
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Move to the directory where CodeDeploy unpacked the artifact
-cd /opt/codedeploy-agent/deployment-root/*/*/deployment-archive/project-2
+# project root: .../project-2
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
-# Ensure nginx web root exists
-mkdir -p /var/www/html
+# Nginx web root (adjust if yours is different)
+WEB_ROOT="/usr/share/nginx/html"
 
-# Copy built frontend files
-cp -r frontend/build/* /var/www/html/
+echo "PROJECT_ROOT=$PROJECT_ROOT"
+echo "Copying build to $WEB_ROOT"
 
-# Fix permissions
-chmod -R 755 /var/www/html
+sudo rm -rf "$WEB_ROOT"/*
+sudo cp -R "$PROJECT_ROOT/frontend/build/"* "$WEB_ROOT/"
 
-echo "AfterInstall completed successfully"
+sudo systemctl restart nginx
