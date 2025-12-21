@@ -2,5 +2,7 @@
 set -e
 
 yum install -y nginx
-systemctl start nginx
 systemctl enable nginx
+systemctl start nginx
+
+mkdir -p /opt/app
