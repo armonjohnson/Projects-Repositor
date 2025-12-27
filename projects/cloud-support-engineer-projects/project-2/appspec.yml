@@ -2,10 +2,15 @@ version: 0.0
 os: linux
 
 files:
-  - source: projects/cloud-support-engineer-projects/project-2/frontend/
+  - source: projects/cloud-support-engineer-projects/project-2/frontend
     destination: /var/www/html
 
 hooks:
+  BeforeInstall:
+    - location: projects/cloud-support-engineer-projects/project-2/scripts/before_install.sh
+      timeout: 300
+      runas: root
+
   AfterInstall:
     - location: projects/cloud-support-engineer-projects/project-2/scripts/start_server.sh
       timeout: 300
