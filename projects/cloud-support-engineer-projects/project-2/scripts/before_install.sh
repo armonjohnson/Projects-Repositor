@@ -1,15 +1,11 @@
 #!/bin/bash
 set -e
 
-# make sure hook scripts can run
-chmod +x projects/cloud-support-engineer-projects/project-2/scripts/*.sh || true
+yum clean all
+yum makecache fast
 
-# install nginx only if missing
-if ! command -v nginx >/dev/null 2>&1; then
+if ! systemctl is-active --quiet nginx; then
   yum install -y nginx
+  systemctl enable nginx
+  systemctl start nginx
 fi
-
-systemctl enable nginx
-systemctl restart nginx
-
-mkdir -p /opt/app
