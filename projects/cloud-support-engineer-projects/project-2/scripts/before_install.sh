@@ -9,3 +9,4 @@ if ! systemctl is-active --quiet nginx; then
   systemctl enable nginx
   systemctl start nginx
 fi
+chmod +x projects/cloud-support-engineer-projects/project-2/scripts/*.sh || true
