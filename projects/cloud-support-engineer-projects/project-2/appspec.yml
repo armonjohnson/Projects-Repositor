@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: projects/cloud-support-engineer-projects/project-2/frontend
+  - source: projects/cloud-support-engineer-projects/project-2/frontend/
     destination: /var/www/html
 
 hooks:
