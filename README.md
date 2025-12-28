@@ -54,8 +54,9 @@ The goal was to design an **end-to-end CI/CD pipeline** that handles these conce
 * Source artifacts are passed to CodeBuild
 
 📸 *CodePipeline – Source Stage*
+<img width="1920" height="1200" alt="Screenshot 2025-12-27 161028" src="https://github.com/user-attachments/assets/b789ab88-084b-46d1-b70c-8d7c6724fd25" />
 
-![CodePipeline Source](./screenshots/Screenshot%202025-12-27%20161028.png)
+
 
 ---
 
@@ -72,10 +73,6 @@ The goal was to design an **end-to-end CI/CD pipeline** that handles these conce
 * Build commands to produce a production-ready React bundle
 * Artifact packaging for CodeDeploy consumption
 * Validation through CodeBuild logs
-
-📸 *Successful CodeBuild Execution*
-
-![CodeBuild Success](./screenshots/Screenshot%202025-12-27%20165438.png)
 
 ---
 
@@ -96,7 +93,7 @@ The goal was to design an **end-to-end CI/CD pipeline** that handles these conce
 
 📸 *CodeDeploy Deployment Group*
 
-![CodeDeploy Group](./screenshots/Screenshot%202025-12-04%20095233.png)
+<img width="1920" height="1200" alt="Screenshot 2025-12-04 095233" src="https://github.com/user-attachments/assets/c9e77155-f065-4642-8c7f-73e479e4ca14" />
 
 ---
 
@@ -116,11 +113,12 @@ The goal was to design an **end-to-end CI/CD pipeline** that handles these conce
 
 📸 *NGINX Default Page (Initial Validation)*
 
-![NGINX Default](./screenshots/Screenshot%202025-12-04%20073332.png)
+<img width="1920" height="1200" alt="Screenshot 2025-12-04 073332" src="https://github.com/user-attachments/assets/3b320448-0374-4d75-997a-4c9c9da98cef" />
 
 📸 *Live React Ecommerce Application*
 
-![React App Live](./screenshots/Screenshot%202025-12-04%20085935.png)
+<img width="1920" height="1200" alt="Screenshot 2025-12-27 165438" src="https://github.com/user-attachments/assets/63c2fee0-3b23-4397-b21f-1166a0cf2b7b" />
+
 
 ---
 
@@ -155,7 +153,7 @@ The goal was to design an **end-to-end CI/CD pipeline** that handles these conce
 
 📸 *React Ecommerce UI*
 
-![Ecommerce UI](./screenshots/Screenshot%202025-12-27%20165438.png)
+<img width="1920" height="1200" alt="Screenshot 2025-12-27 183921" src="https://github.com/user-attachments/assets/fc9e7fc1-b6e6-473c-bd41-324797cb4b70" />
 
 ### Deployment Validation
 
